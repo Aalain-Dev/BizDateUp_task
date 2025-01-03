@@ -2,4 +2,54 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+.bg-sidebar-color{
+  background-color: #F8F9FA!important;
+}
+.text-size-20{
+  font-size: 20px;
+}
+.nav-pills .nav-link.active{
+  background-color: #2BB3D0;
+}
+.width-280{
+  width: 280px;
+}
+.h-100vh{
+  height: 100vh;
+}
+.pointer{
+  cursor: pointer;
+}
+.custom-padding{
+  padding: 32px 32px;
+}
+.text-32{
+  font-size: 32px;
+}
+.label-text{
+  font-size: 24px;
+}
+.custom-margin{
+  margin-top: 35px;
+}
+.text-24{
+  font-size: 21px;
+}
+.custom-field-bg-color{
+  background-color: #F0EDED;
+  border: none;
+  border-radius: 5px;
+}
+.btn-color{
+  background-color: #2BB3D0;
+  color: white;
+  font-size: 21px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+.err-state{
+  color: red;
 }

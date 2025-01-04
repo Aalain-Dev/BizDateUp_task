@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from "../../assets/images/logo.png"
 import "../../../src/index.css"
+import { Link } from 'react-router'
 
 const Sidebar = () => {
   return (
@@ -9,12 +10,14 @@ const Sidebar = () => {
       <img src={logo} className='text-center w-75 ' alt ="Logo" title='Logo' />
       </div>
       <ul className="nav nav-pills flex-column mb-auto mt-4">
-          <li className="nav-item fw-bold text-center text-size-20 nav-link active pointer">
+       <Link className='text-decoration-none' to = "/">
+       <li className="nav-item fw-bold text-center text-size-20 nav-link active pointer">
           Create Task 
-        </li>
-        <li className="nav-item  text-center text-size-20 mt-3 pointer">
+        </li></Link>
+   <Link className='text-decoration-none' to = "/viewtask">
+   <li className="nav-item  text-center text-size-20 mt-3 pointer">
         View Task
-        </li>
+        </li></Link>
         <li className="nav-item  text-center text-size-20 mt-3 pointer">
         Completed Task
         </li>

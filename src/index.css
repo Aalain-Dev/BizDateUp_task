@@ -57,9 +57,9 @@
   font-size: 24px;
 }
 .priority{
-  background-color: #E461F6;
+  background-color: #F5F5F7;
   border-radius: 10px;
-  color: #fff;
+  color: #000;
   text-align: center;
   padding: 5px;
   min-width: 70px;
@@ -81,4 +81,10 @@
 }
 .custom-margin-bottom{
   margin-bottom: 5px!important;
+}
+.custom-spacing{
+  right: 0;
+}
+.pointer{
+  cursor: pointer;
 }

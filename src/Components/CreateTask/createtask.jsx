@@ -4,8 +4,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Add this import
 
 const Createtask = () => {
-  let time = Math.floor(Date.now() / 1000)
-  
+  let time = Math.floor(Date.now() / 1000);
+
   const initialValues = {
     task_name: "",
     description: "",
@@ -13,14 +13,14 @@ const Createtask = () => {
     priority: "",
     start_date: "",
     end_date: "",
+    status: "On Going",
   };
   const [data, setdata] = useState([]);
-
   const onSubmit = (values, { resetForm }) => {
     const newtask = {
       ...values,
-      id:time
-    }
+      id: time,
+    };
     setdata((prevData) => [...prevData, newtask]);
     resetForm();
     toast.success("Task created successfully!", {
@@ -70,7 +70,7 @@ const Createtask = () => {
   return (
     <>
       <ToastContainer />
-      <div className="create-task custom-padding w-75">
+      <div className="create-task custom-padding   w-75">
         <h4 className="text-32 fw-semibold text-start">Create Task</h4>
 
         <Formik

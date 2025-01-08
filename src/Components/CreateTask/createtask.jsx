@@ -13,7 +13,7 @@ const Createtask = () => {
     priority: "",
     start_date: "",
     end_date: "",
-    status: "On Going",
+    task_status: "On Going",
   };
   const [data, setdata] = useState([]);
   const onSubmit = (values, { resetForm }) => {
@@ -70,7 +70,7 @@ const Createtask = () => {
   return (
     <>
       <ToastContainer />
-      <div className="create-task custom-padding   w-75">
+      <div className="create-task custom-padding   w-80">
         <h4 className="text-32 fw-semibold text-start">Create Task</h4>
 
         <Formik
